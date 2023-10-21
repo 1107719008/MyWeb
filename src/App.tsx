@@ -6,15 +6,14 @@ import NavBar from "./components/NavBar";
 import imagePath from "./assets/react.svg";
 import TestetComponent from './components/TestetComponent.tsx'
 import Header from './components/Header.tsx'
+import Footer from './components/Footer.tsx';
+
 function App() {
   const [count, setCount] = useState(0)
   let items = ["Home","Product", "Service"];
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
@@ -28,9 +27,7 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    
 
       <div>
       <NavBar 
@@ -41,6 +38,8 @@ function App() {
 
     <TestetComponent />
     <Header />
+
+    <Footer />
 
     </>
   )
