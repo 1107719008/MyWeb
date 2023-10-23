@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../App.css"
+import "../App.css";
 
 interface NavBarProps {
   brandName: string;
@@ -8,13 +8,12 @@ interface NavBarProps {
 }
 
 function NavBar({ brandName, imageSrcPath, navItems }: NavBarProps) {
-
   const [selectedIndex, setSelectedIndex] = useState(-1);
 
   return (
     <nav className="navbar navbar-expand-md navbar-light bg-white shadow">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="#">{/* href="#" 回到主頁 */}
           <img
             src={imageSrcPath}
             width="60"
@@ -38,7 +37,8 @@ function NavBar({ brandName, imageSrcPath, navItems }: NavBarProps) {
         <div
           className="collapse
          navbar-collapse"
-        id="navbarSupportedContent">
+          id="navbarSupportedContent"
+        >
           <ul className="navbar-nav me-auto mb-2 mb-md-1">
             {navItems.map((items, index) => (
               <li
