@@ -1,11 +1,19 @@
 import React from 'react';
-
+import NavBar from "./NavBar";
+import imagePath from "../assets/images/sheep.jpg";
 const Header: React.FC = () => {
+  let items = ["作品集","經歷","關於我"];
   return (
+    
     <div>
-     <h1>Hi, I'm Hank Lin. A Developer.</h1>
-      <p>這是header。</p>
       
+     <h1>這是header。</h1>
+     
+      
+      <NavBar 
+      brandName="Delask Dev Web" 
+      imageSrcPath={imagePath} 
+      navItems={items}/>
      
     </div>
   );

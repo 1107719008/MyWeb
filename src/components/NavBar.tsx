@@ -13,7 +13,8 @@ function NavBar({ brandName, imageSrcPath, navItems }: NavBarProps) {
   return (
     <nav className="navbar navbar-expand-md navbar-light bg-white shadow">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">{/* href="#" 回到主頁 */}
+        <a className="navbar-brand" href="#">
+          {/* href="#" 回到主頁 */}
           <img
             src={imageSrcPath}
             width="60"
